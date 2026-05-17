@@ -1,1 +1,1 @@
-No-IP DDNS Manager - Manage and update dynamic IP on no-ip.com
+No-IP DDNS Manager - Manage and update dynamic IP on no-ip.com with web interface

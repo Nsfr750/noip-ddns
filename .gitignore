@@ -1,1 +1,5 @@
 COMANDI
+apkg-tools.py
+*.apk
+*.log
+*.csv

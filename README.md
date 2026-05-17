@@ -1,10 +1,8 @@
 # No-IP DDNS Manager
 
-## Gestione e aggiornamento IP dinamico su no-ip.com
-
 ## Manage and update dynamic IP on no-ip.com
 
-  Copyright 2024-2026 Nsfr750 - All rights reserved.
+## Gestione e aggiornamento IP dinamico su no-ip.com
 
 ---
 
@@ -156,7 +154,8 @@ noip-ddns/
 │   └── post-uninstall.sh    # Post-uninstall script / Script post-disinstallazione
 └── data/
     ├── lib/
-    │   └── ddns_updater.py  # Python DDNS update script / Script Python aggiornamento DDNS
+    │   ├── ddns_updater.py  # Python DDNS update script / Script Python aggiornamento DDNS
+    │   └── web_server.py    # Python web server / Server web Python
     ├── etc/
     │   └── config.json      # Configuration file / File configurazione
     └── webapp/
@@ -170,25 +169,25 @@ noip-ddns/
 ### Start Service / Avvio del Servizio
 
 ```bash
-/usr/local/AppCentral/noip-ddns/control/start-stop.sh start
+sudo /usr/local/AppCentral/noip-ddns/control/start-stop.sh start
 ```
 
 ### Stop Service / Arresto del Servizio
 
 ```bash
-/usr/local/AppCentral/noip-ddns/control/start-stop.sh stop
+sudo /usr/local/AppCentral/noip-ddns/control/start-stop.sh stop
 ```
 
 ### Force Manual Update / Forza Aggiornamento Manuale
 
 ```bash
-/usr/local/bin/python3 /usr/local/AppCentral/noip-ddns/lib/ddns_updater.py --once
+sudo /usr/local/bin/python3 /usr/local/AppCentral/noip-ddns/lib/ddns_updater.py --once
 ```
 
 ### Run as Daemon / Esecuzione come Daemon
 
 ```bash
-/usr/local/bin/python3 /usr/local/AppCentral/noip-ddns/lib/ddns_updater.py --daemon --interval 300
+sudo /usr/local/bin/python3 /usr/local/AppCentral/noip-ddns/lib/ddns_updater.py --daemon --interval 300
 ```
 
 ---

@@ -1,6 +1,15 @@
 No-IP DDNS Manager Changelog
 =============================
 
+Version 1.0.1 (2026-05-17)
+--------------------------
+- Added integrated web server for web interface
+- Fixed start-stop.sh to launch both DDNS updater and web server
+- Updated package to include web_server.py component
+- Improved service management with separate PID files
+- Fixed Windows compatibility in apkg-tools.py
+- Added proper markdown formatting to README
+
 Version 1.0.0 (2026-05-17)
 --------------------------
 - Initial release
@@ -19,10 +28,11 @@ Features:
 - Automatic IP change detection
 - Configurable update interval (default: 300 seconds)
 - Secure credential storage
-- Web interface on port 7777
+- Web interface on port 7777 with integrated server
 - Log file at /var/log/noip-ddns.log
 - Configuration backup on upgrade
 - Daemon mode for background operation
+- RESTful API for host management
 
 Technical:
 - Python 3.x based
@@ -30,5 +40,6 @@ Technical:
 - JSON configuration format
 - Shell scripts for service management
 - APK package format 2.0
+- HTTP server for web interface
 
 © Copyright 2024-2026 Nsfr750 - All rights reserved.
