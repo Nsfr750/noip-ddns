@@ -10,8 +10,7 @@ case $1 in
 
 	start)
 		# start DDNS service
-		cd $APKG_PKG_DIR/lib/
-		$PYTHON_CMD ddns_updater.py --daemon > /dev/null 2>&1 &
+		$PYTHON_CMD $APKG_PKG_DIR/data/lib/ddns_updater.py --daemon > /dev/null 2>&1 &
 		echo $! > $PID_FILE
 		;;
 
