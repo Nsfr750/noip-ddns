@@ -1,0 +1,12 @@
+{
+  "hosts": [
+    {
+      "hostname": "example.ddns.net",
+      "username": "your_noip_username",
+      "password": "your_noip_password"
+    }
+  ],
+  "update_interval": 300,
+  "last_update": null,
+  "last_ip": null
+}

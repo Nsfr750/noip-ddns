@@ -1,0 +1,34 @@
+No-IP DDNS Manager Changelog
+=============================
+
+Version 1.0.0 (2026-05-17)
+--------------------------
+- Initial release
+- DDNS automatic update for no-ip.com
+- Modern dark mode web interface
+- Multi-host support
+- Real-time IP monitoring
+- Manual update on-demand
+- Detailed logging system
+- Python-based DDNS updater
+- Configuration via web interface or JSON file
+- Responsive design for mobile devices
+- Support for ASUSTOR/Synology NAS
+
+Features:
+- Automatic IP change detection
+- Configurable update interval (default: 300 seconds)
+- Secure credential storage
+- Web interface on port 7777
+- Log file at /var/log/noip-ddns.log
+- Configuration backup on upgrade
+- Daemon mode for background operation
+
+Technical:
+- Python 3.x based
+- RESTful API integration with no-ip.com
+- JSON configuration format
+- Shell scripts for service management
+- APK package format 2.0
+
+© Copyright 2024-2026 Nsfr750 - All rights reserved.
