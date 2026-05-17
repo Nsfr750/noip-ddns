@@ -16,7 +16,7 @@
       "app":{
          "type":"custom",
 		 "protocol":"http",
-         "port":90,
+         "port":7777,
 		 "url":"/"
       },
       "privilege":{
