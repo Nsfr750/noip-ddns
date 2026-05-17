@@ -1,8 +1,8 @@
 # No-IP DDNS Manager
 
-**Gestione e aggiornamento IP dinamico su no-ip.com**
+## Gestione e aggiornamento IP dinamico su no-ip.com
 
-**Manage and update dynamic IP on no-ip.com**
+## Manage and update dynamic IP on no-ip.com
 
   Copyright 2024-2026 Nsfr750 - All rights reserved.
 
@@ -42,12 +42,14 @@ No-IP DDNS Manager è un'applicazione per la gestione automatica dell'aggiorname
 ## Installation / Installazione
 
 **English:**
+
 1. Download the APK package file
 2. Install the package through your NAS application center
 3. Access the web interface at `http://<nas-ip>:7777`
 4. Configure your no-ip.com hosts
 
 **Italiano:**
+
 1. Scarica il file APK del pacchetto
 2. Installa il pacchetto tramite il centro applicazioni del tuo NAS
 3. Accedi all'interfaccia web all'indirizzo `http://<nas-ip>:7777`
@@ -60,20 +62,26 @@ No-IP DDNS Manager è un'applicazione per la gestione automatica dell'aggiorname
 ### Via Web Interface / Tramite Interfaccia Web
 
 **English:**
+
 1. Access the web interface
 2. In the "Configured Hosts" section, enter:
+
    - **Hostname**: Your no-ip.com domain (e.g., `mydomain.ddns.net`)
    - **Username**: Your no-ip.com username
    - **Password**: Your no-ip.com password
+
 3. Click "Add Host"
 4. Repeat for all hosts you want to manage
 
 **Italiano:**
+
 1. Accedi all'interfaccia web
 2. Nella sezione "Host Configurati", inserisci:
+
    - **Hostname**: Il tuo dominio no-ip.com (es. `miodominio.ddns.net`)
    - **Username**: Il tuo username no-ip.com
    - **Password**: La tua password no-ip.com
+
 3. Clicca su "Aggiungi Host"
 4. Ripeti per tutti gli host che desideri gestire
 
@@ -171,7 +179,7 @@ noip-ddns/
 /usr/local/AppCentral/noip-ddns/control/start-stop.sh stop
 ```
 
-### Manual Update / Aggiornamento Manuale
+### Force Manual Update / Forza Aggiornamento Manuale
 
 ```bash
 /usr/local/bin/python3 /usr/local/AppCentral/noip-ddns/lib/ddns_updater.py --once
@@ -190,11 +198,13 @@ noip-ddns/
 ### Service Won't Start / Il servizio non si avvia
 
 **English:**
+
 1. Check logs in `/var/log/noip-ddns.log`
 2. Verify Python 3 is installed: `/usr/local/bin/python3 --version`
 3. Ensure ports are not in use
 
 **Italiano:**
+
 1. Controlla i log in `/var/log/noip-ddns.log`
 2. Verifica che Python 3 sia installato: `/usr/local/bin/python3 --version`
 3. Assicurati che le porte non siano in uso
@@ -202,12 +212,14 @@ noip-ddns/
 ### IP Not Updating / L'IP non viene aggiornato
 
 **English:**
+
 1. Verify no-ip.com credentials
 2. Check hostname is correct
 3. Verify internet connection
 4. Check logs for specific errors
 
 **Italiano:**
+
 1. Verifica le credenziali no-ip.com
 2. Controlla che l'hostname sia corretto
 3. Verifica la connessione internet
@@ -216,11 +228,13 @@ noip-ddns/
 ### no-ip.com Authentication Error / Errore di autenticazione no-ip.com
 
 **English:**
+
 1. Verify username and password
 2. Ensure you're using no-ip.com credentials (not email)
 3. Check account is active
 
 **Italiano:**
+
 1. Verifica username e password
 2. Assicurati di usare le credenziali no-ip.com (non email)
 3. Controlla che l'account sia attivo
@@ -230,12 +244,14 @@ noip-ddns/
 ## Security / Sicurezza
 
 **English:**
+
 - Passwords are stored in plain text in the configuration file
 - Ensure `config.json` has restrictive permissions
 - Use strong passwords for your no-ip.com account
 - Consider using a dedicated account for DDNS
 
 **Italiano:**
+
 - Le password sono salvate in chiaro nel file di configurazione
 - Assicurati che il file `config.json` abbia permessi restrictivi
 - Usa password complesse per l'account no-ip.com
@@ -257,15 +273,17 @@ Questo progetto è distribuito sotto licenza GPLv3.
 
 **English:**
 For issues or questions:
+
 - Email: [Nsfr750](mailto:nsfr750@yandex.com)
-- Website: https://www.tuxxle.org
-- GitHub: https://github.com/Nsfr750
+- Website: <https://www.tuxxle.org>
+- GitHub: <https://github.com/Nsfr750>
 
 **Italiano:**
 Per problemi o domande:
+
 - Email: [Nsfr750](mailto:nsfr750@yandex.com)
-- Sito web: https://www.tuxxle.org
-- GitHub: https://github.com/Nsfr750
+- Sito web: <https://www.tuxxle.org>
+- GitHub: <https://github.com/Nsfr750>
 
 ---
 

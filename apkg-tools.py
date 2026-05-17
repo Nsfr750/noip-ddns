@@ -240,7 +240,11 @@ class Apkg:
 
 		# change file mode and owner
 		os.chmod(control_dir, 0o755)
-		os.chown(control_dir, 0, 0)
+		try:
+			os.chown(control_dir, 0, 0)
+		except AttributeError:
+			# os.chown not available on Windows
+			pass
 
 		all_files = glob.glob(control_dir + '/*')
 		sh_files  = glob.glob(control_dir + '/*.sh')
@@ -248,11 +252,16 @@ class Apkg:
 
 		for one_file in all_files:
 			os.chmod(one_file, 0o644)
-			os.chown(one_file, 0, 0)
+			try:
+				os.chown(one_file, 0, 0)
+			except AttributeError:
+				# os.chown not available on Windows
+				pass
 
 		for one_file in sh_files:
 			os.chmod(one_file, 0o755)
-			os.system('dos2unix %s > /dev/null 2>&1' % (one_file))
+			if sys.platform != 'win32':
+				os.system('dos2unix %s > /dev/null 2>&1' % (one_file))
 
 		for one_file in py_files:
 			os.chmod(one_file, 0o755)
